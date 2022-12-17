@@ -11,10 +11,15 @@ Mattermost link
 #2023 Schedule
 
 Jan 3rd, 13:45 - 15:00, 15:15 - 16:30
+
 Jan 4th, 13:45 - 15:00, 15:15 - 16:30
+
 Jan 10th, 13:45 - 15:00, 15:15 - 16:30
+
 Jan 11th, 13:45 - 15:00, 15:15 - 16:30
+
 Jan 18th, 13:45 - 15:00, 15:15 - 16:30
+
 Note: TPIA on Jan 6th, Jan 13th (same time slots)
 
 # Exercises
