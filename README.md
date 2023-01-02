@@ -3,9 +3,9 @@ Graduate class content on ML for embedded systems
 
 # Communication
 
-Webex/Zoom link
+[Webex/Zoom link](https://imt-atlantique.webex.com/meet/MSc-IT) -  https://imt-atlantique.webex.com/meet/MSc-IT
 
-Mattermost link
+[Mattermost link](https://mattermost.imt-atlantique.fr/mooc-plido/channels/os-and-ml) - https://mattermost.imt-atlantique.fr/mooc-plido/channels/os-and-ml
 
 
 #2023 Schedule
