@@ -48,11 +48,31 @@ Note: TPIA on Jan 6th, Jan 13th (same time slots)
   
 # Session 2 - Jan 4th
 
-* Machine Learning Frameworks
-	
-* Supervised Learning
-* Session 2 exercises for PIA session
-	
+* I'll post the recording when it becomes available.
+
+* [Machine Learning Frameworks](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot2/#/2)
+	* You will find many tools 'out there' that claim to support your ML work. Understanding the different types will help you choose wisely:
+		* Some tools are open source ML frameworks. They include sets of commands and libraries that allow you to run most ML algorithms. The dominant players in this category include Scikit Learn (developed by an open source community), Tensorflow (developed by Google) and Pytorch (developed by Facebook/Meta). Be wary of 'science projects', frameworks that were developed in the past for a specific purpose, then stopped being maintained, surviving on their past fame.
+		* Some tools are integrative frameworks. They are used in specialized tasks or fields where ML is a component. Examples include Matlab (widely used for mathematical modeling, for example in radio engineering) or R (widely used in statistical modeling and analysis). Most ML practitioners use these tools because they work in a field where these tools are common, not 'just' because of the ML support in these tools.
+		* Some companies provide integrated environments, from where you can call most common frameworks, but also manage your data, your models, your connected objects, optimize your ML development tasks, access pre-computed models and more. Examples include Amazon SageMaker and IBM Watson Studio.
+		* Some companies provide specialized ML development environments. For example, Edge Impulse specializes in ML optimizations for wearables and other constrained devices.
+		* As you develop ML projects, you will need to make many attemps. Notebooks like Jupyter provide an easy way to document your attempts, with notes and segments of code that you can execute and which result / outcome you can visualize.
+		* As you move beyond the research phase and work on deveopping full-blown ML solutions, IDEs like PyCharm provide powerful environments to develop and test/debug entire programs.
+* [Supervised Learning](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot2/#/18)
+	* With Supervised Learning, you train a machine on a data set (the training set) to find the equation and parameters that best describes the data.
+	* Your goal can be to find the equation that closely follows the data structure (linear regression). The machine then learns the parameters of a curve that is closest to the data points coordinates in your training set.
+	* Your goal can be to organize data in two groups, and find to which group new data belongs. Logistic Regression is a tool of choice for this goal. LR is a powerful way of predicting the probability of an event, or of a group membership.
+	* Your goal may be to find the boundaries between 2 or more groups. Support Vector Machines (SVM) are common tools for such goals, finding the equations (and parameters) of the boundary lines.
+	* When working with decision trees, Random Forests provide an efficient way to predict an outcome, based on partial data.
+	* Most supervised models can be made light enough to fit on edge devices like the ESP32. However, such compression comes with constraints. If the model is too big, it may run slower than the inference data pace. If the model is small but the underlying (training, inference) data too large, the inference or the trainig fail. Finding the right balance consume a good part of the ML development task.
+
+* Session 2 exercises
+	* Install Jupyter notebook or Studio. You can either downloand the [Standalone version](https://jupyter.org/install) or, better yet, install [Anaconda navigator](https://anaconda.org/anaconda/anaconda-navigator), for which Jupyter is one component that you can activate. 
+	* Download the [data](https://github.com/jhenry-github/Iot-ml-2022slides/blob/main/Exercises/unconv_MV_v5.csv), the [exercise notebook](https://github.com/jhenry-github/Iot-ml-2022slides/blob/main/Exercises/Supervised_exercises.ipynb), open it in Jupyter, and follow the instructions. Of course, you can just use 'Shift enter' to run each line while thinking about something else. But then you just wasted your time and an opportunity to learn something fundamental to ML. So my suggestion is to read the code, for each line, and try to understand what the lines do. In an ideal world, you would also want to open a new Notebook, and paste one by one (or type from memory) the lines for the parts that interest you, put your own notes and keep these somehwere, as you will likley use the same type of structure millions of times as you work on new ML projects.
+	* At the end of the course, you will need to send the exercise notebook (with all lines executed, and your answers to the questions in the notebook) to me.
+
+
+
 
 
 # Session 3 - Jan 10th
