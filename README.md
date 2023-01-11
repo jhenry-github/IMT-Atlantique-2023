@@ -73,25 +73,45 @@ Note: TPIA on Jan 6th, Jan 13th (same time slots)
 
 
 
-
-
 # Session 3 - Jan 10th
 
-* Possible solution to the exercises in session 2
+* [Possible solution to the exercises in session 2](https://github.com/jhenry-github/Iot-ml-2022slides/blob/main/Exercises/Supervised_exercises_solved.ipynb)
 
-* Unsupervised Learning
+* [Unsupervised Learning](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot3/#/3)
+	* Unsupervised learning, or clustering, allows you to group data (and thus find pattern) and identify outliers in each group
+	* One common algorithm is K-means.
+	* One important question for K-means is the number of cluster. TEchniques like the elbow method, or the silhouette score method, can help find a useful number of clusters. Hierarchical clustering also helps see the relationship between clusters.
+	* When data cannot easily be graphed for K-means, projections and transformations help a lot. When, even in that case, data seays 'messy' (clusters cannot easily be separated) or 'noisy' (useful data is outside of clear culsters), other techniques, like DBSCAN, can be useful.
+	* Running unsupervised learning on constrained devices can overload the system. Mini-batching and code optimization can be useful to run the clusterization and membership task faster than the inference data generation pace. 
 
-* Dimension Reduction
+* [Dimension Reduction](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot3/#/41)
+	* ML problems generate data in large sets of dimensions. Each additional dimension adds a larger of possible solutions, with a larger computation cost.
+	* Reducing the number of dimensions may provide a 'good enough' solution while greatly reducing the complexity and size of the model.
+	* Principal Component Analysis (PCA) is a common tool for dimensionality reduction. PCA uses algebraic methods (eigenvectors, least squares) to find the most significant dimensions, and project the others.
+* [Bayes](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot3/#/63)
+	* Bayes approaches form a family of techniques somewhat different from the trained techniques examined so far.
+	* Bayes techniues are generative (while other methods are discriminative), and attempt to evaluate outcomes based on partial data.
+	* Bayes approaches are very useful for real-time and/or partial data techniques (e.g., credit card fraud).
 
-* Bayes
  
 # Session 4 - Jan 11th
 
-* Neural Networks
+* [Neural Networks](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot4_1/#/2)
+	* Neural networks implement structures orginially aimed at mimicing the functioning of the brain.
+	* NL ability to scale allows them to keep succesfuly problems where monolithic models plateau
+	* NL can implement different equations (activation functions) at different layers. Input weights are dynamically learned through back propagation.
+	* A particular NL structure, the Convolutional Neural Network (CNN) is particularly efficient at recognizing patterns (features) in images (or any structure that can be graphed as an image).
 
-* ML on ESP-EYE
+* [ML on ESP-EYE](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot4_2/#/17)
+ 	* ESP-EYE includes a camera and a mic, you can run on it compressed simple ML models. 
+	* Its manufacturer provides several pre-compiled examples in the WHO repository.
+	* You can also build compacr models with other environements, like Edge Impulse.
 
 * Session 4 Exercise
+	* Now it's your turn! Use the material from the class, or [help from Edge Impulse site](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/espressif-esp32) to connct your ESP 32 to your computer and to Edge Impulse Studio.
+	* Then follow the [class slides](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot4_2/#/30) or [Edge Impulse tutorial](https://docs.edgeimpulse.com/docs/tutorials/audio-classification) to train your ESP-EYE to recognize a word, expression or short sound sequence. The sequence can be anything, but you ESP-EYE should recognize it with at least 80% confidence.
+	* A succesful exercise is (for example with screen recording) you, speaking into your ESP-EYE, and your ESP-EYE CLI correctly identifying the sequence (vs. some other sound). Share that recording with me.
+
 
 
 # Session 5 - Jan 18th
