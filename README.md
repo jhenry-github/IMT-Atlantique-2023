@@ -116,9 +116,13 @@ Note: TPIA on Jan 6th, Jan 13th (same time slots)
 
 # Session 5 - Jan 18th
 
-* Review of ML on ESP EYE exercise
+* [Building a Succesful IoT ML Project](https://jhenry-github.github.io/Iot-ml-2022slides/slides_ml-iot5/#/2)
+	* Choose ML projects that have potential - they are solving problems for humans; avoid ML projects that are there 'just' because ML 'can do it'
+	* Discuss your project with stakeholders and people outside of the ML realm, have them question why ML is needed in the first place, and why simpler techniques (e.g., trehsolds) cannot be used.
+	* Design a Minimum Viable Product (MVP), i.e. a first output of your ML work that can solve some of the problems at hand. Then design later iterations that solve a larger proportion of the problems. Avoid only designing the final, perfect solution, as it may be out of reach, or as you may realise (too late) that you went the wrong direction.
+	* Expect your ML model to be biased. This is almost unavoidable. Spend some time understanding the model outputs. REflect on what explicit criteria (and weights) were used to produce that output. Also reflect on what implicit criteria may be lurking behind the explicit criteria.
+	* In most cases, your role is to surface the biases. Deciding what to do about the biases (welcome them, ignore them, attempt to mitigate them) often depends on the context, and it is advisable 'not' to make that decision alone, unless you are fully in charge of the context definitioon. 
 
-* Building a Succesful IoT ML Project
 
 
 
